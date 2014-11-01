@@ -15,11 +15,11 @@ var OSFHighlightRules = function() {
              },
              {
                 token : "variable",
-                regex : "(#t\\s)|(#q\\s)|(#c\\s)|(#g\\s)|(#l$)|(#t$)|(#q$)|(#c$)|(#g$)|(#l$)"
+                regex : "(#t\\s)|(#q\\s)|(#c\\s)|(#l\\s)|(#g\\s)|(#l$)|(#t$)|(#q$)|(#c$)|(#g$)|(#l$)"
              },
              {
                 token : "variable",
-                regex : "(#topic\\s)|(#quote\\s)|(#chapter\\s)|(#glosarry\\s)|(#link\\s)|(#topic$)|(#quote$)|(#chapter$)|(#glosarry$)|(#link$)"
+                regex : "(#topic\\s)|(#quote\\s)|(#chapter\\s)|(#glossary\\s)|(#link\\s)|(#topic$)|(#quote$)|(#chapter$)|(#glossary$)|(#link$)"
              },
              {
                 token : "meta",
@@ -69,7 +69,7 @@ exports.OSFHighlightRules = OSFHighlightRules;
 
 });
 
-ace.define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"], function(require, exports, module) {
+define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"], function(require, exports, module) {
 "use strict";
 
 var Range = require("../range").Range;
